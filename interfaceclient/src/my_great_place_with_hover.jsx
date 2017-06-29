@@ -20,9 +20,9 @@ export default class MyGreatPlaceWithHover extends Component {
     const style = this.props.$hover ? greatPlaceStyleHover : greatPlaceStyle;
 
     return (
-       <div style={style}>
+       <button style={style}>
           {this.props.text}
-       </div>
+       </button>
     );
   }
 }
