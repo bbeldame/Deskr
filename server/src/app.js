@@ -26,4 +26,8 @@ websocket.on('connection', (socket) => {
   socket.on('vanishAll', () => {
     emitAll('vanishAll');
   });
+
+  socket.on('openImage', () => {
+    emitAll('displayHouse');
+  });
 });

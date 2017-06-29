@@ -68,6 +68,10 @@ class App extends Component {
               } else if (response.result.metadata.intentName.substring(3) === 'Map') {
                 this.socket.emit('displayMap');
                 this.setState({talking: false, listening: false});
+              } else if (response.result.metadata.intentName.substring(3) === 'DisplayHouse') {
+                console.log('je suis ici');
+                this.socket.emit('openImage');
+                this.setState({talking: false, listening: false});
               }
         } else {
           this.speak(response.result.fulfillment.speech)
