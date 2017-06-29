@@ -1,0 +1,25 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "google-map-react": "^0.24.0",
+    "lodash": "^4.17.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-google-maps": "^6.3.0",
+    "react-pure-render": "^1.0.2",
+    "react-three-renderer": "^3.1.0",
+    "socket.io-client": "^2.0.1",
+    "three": "^0.85.2"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
