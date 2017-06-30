@@ -17,7 +17,8 @@ const greatPlaceStyle = {
   fontSize: 16,
   fontWeight: 'bold',
   padding: 4,
-  cursor: 'pointer'
+  cursor: 'pointer',
+  outline: 'none',
 };
 
 const greatPlaceStyleHover = {

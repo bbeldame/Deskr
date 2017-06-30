@@ -3,3 +3,81 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.infos {
+  background: white;
+  border-radius: 0.25em;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  margin: 2em auto;
+  max-width: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.card-poster {
+  background-color: #bdbdbd;
+  background-image: url("http://www.feau-immobilier.fr/ImageBien.ashx?id-format=4&ph=0075-16-1302582-a.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 225px;
+  position: relative;
+}
+
+.card-poster__grade {
+  background: #9CCC65;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 2.75em;
+  position: absolute;
+  right: .5em;
+  text-align: center;
+  top: .5em;
+  width: 2.75em;
+}
+
+.card-poster__title {
+  bottom: 0.5em;
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 10px; 
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.card-text {
+  padding: 2em 0;
+  text-align: center;
+}
+.card-text__paragraph {
+  margin: 0 1rem 1.8rem 1rem;
+  max-width: 300px;
+}
+.card-text__button {
+  border: .15em solid #4FC3F7;
+  border-radius: 0.25em;
+  color: #4FC3F7;
+  display: inline-block;
+  font-weight: 700;
+  padding: .5em 4em;
+  text-decoration: none;
+  transition: .15s all ease-in-out;
+}
+.card-text__button:hover {
+  background: #4FC3F7;
+  border-color: #4FC3F7;
+  color: white;
+}
+
+.card-meta {
+  color: #9e9e9e;
+  font-weight: 700;
+  letter-spacing: .0625em;
+  margin-bottom: 1.8em;
+  text-transform: uppercase;
+}
