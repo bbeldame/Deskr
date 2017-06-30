@@ -1,0 +1,167 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#top_screen {
+    width: 80%;
+    background-size: 100%;
+    display: block;
+}
+
+#bottom_screen {
+    display: block;
+    background: url('img/bottom_screen.png') no-repeat;
+    width: 80%;
+    height: 400px;
+    background-size: 100%;
+}
+
+#content {
+    width: 80%;
+    height: 1000px;
+    margin-top: 0;
+    background:url('img/background.png');
+    padding-top: 5em;
+}
+
+.blue_box {
+    background: #005997;
+}
+
+.left_menu {
+    background: #0073BE;
+}
+
+#mail_box {
+    margin-left: 3em;
+    display: block;
+    width: 620px;
+    height: 860px;
+    border-radius: 1em;
+}
+
+#mail_menu {
+    display: inline-block;
+    height: 853px;
+    width: 100px;
+    border-color: #0073BE;
+    border-style: solid;
+    border-radius: 1em;
+    background: url('img/bgmailmenu.png');
+    float:left;
+}
+
+#mail_content {
+    display:inline-block;
+    width: 500px;
+    height: 860px;
+}
+
+#mail_icon {
+    margin-top: 3em;
+    margin-left: 3em;
+    transform: scale(2);
+}
+
+#mail_title {
+    color: white;
+    font-size: 33px;
+    letter-spacing: 1px;
+    padding-left: 1em;
+    display: inline-block;
+}
+
+#list_mail {
+    color:white;
+    list-style: none;
+    
+}
+
+.mail_name {
+    display: inline-block;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.time {
+    display: inline-block;
+    padding-left: 7em;
+    font-size: 24px;
+    font-weight: 80;
+}
+
+.subtitle {
+    float: left;
+    display: block;
+    margin-top: -1em;
+    font-weight: lighter;
+}
+
+.mail_row {
+    height: 138px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#time1 {
+    padding-left: 7.8em;
+}
+
+#time2 {
+    padding-left: 7.4em;
+}
+
+#time3 {
+    padding-left: 8.6em;
+}
+
+#time4 {
+    padding-left: 9.5em;
+}
+
+#time5 {
+    padding-left: 9em;
+}
+
+/****************************/
+
+#open_content {
+    background: url('img/bgmailopen.png');
+    background-size: 102%;
+    width: 80%;
+    height: 1000px;
+    margin-top: 0;
+    padding-top: 5em;
+    color: white;
+}
+
+#mail {
+    width: 920px;
+    height: 500px;
+    margin-top: 10em;
+    margin-left: 17em;
+    border-radius: 1em;
+    padding: 2em 4em;
+}
+
+#sender {
+    font-size: 32px;
+    display: inline-block;
+    height: 6px;
+}
+
+#time_received {
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 430px;
+}
+
+#sub-title {
+    margin-bottom: 3em;
+}
+
+#mail_body {
+    margin-top: 3em;
+    font-size: 24px;
+}
