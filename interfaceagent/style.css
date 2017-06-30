@@ -164,3 +164,258 @@ body {
     margin-top: 3em;
     font-size: 24px;
 }
+
+/*****************************/
+/***** PHONE ***/
+
+#phone_box {
+    margin-left: 3em;
+    display: inline-block;
+    width: 310px;
+    height: 430px;
+    border-radius: 1em;
+    float:left;
+}
+
+#phone_menu {
+    display: inline-block;
+    height: 423px;
+    width: 50px;
+    border-color: #0073BE;
+    border-style: solid;
+    border-radius: 1em;
+    background: url('img/bgminimenu.png') no-repeat;
+    float:left;
+}
+
+#phone_content {
+    padding: 1em;
+    display:inline-block;
+    width: 200px;
+    height: 860px;
+    font-size: 14px;
+    color: white;
+}
+
+#phone_title {
+    font-size: 19px;
+    color: white;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+#thomaspic {
+    margin-top: -2em;
+}
+
+.phone_name {
+    font-size: 22px;
+    margin-left: 1em;
+    margin-top: -1em;
+}
+
+#phone_icon {
+    transform: scale(1.5);
+}
+
+#phonetime {
+    font-size: 16px;
+    margin-left: 5.5em;
+}
+
+/**********************************/
+/****** NOTES *******/
+
+#notes_box {
+    margin-left: 3em;
+    display: inline-block;
+    width: 310px;
+    height: 430px;
+    border-radius: 1em;
+}
+
+#notes_menu {
+    display: inline-block;
+    height: 423px;
+    width: 50px;
+    border-color: #0073BE;
+    border-style: solid;
+    border-radius: 1em;
+    background: url('img/bgminimenu.png') no-repeat;
+    float:left;
+}
+
+#notes_content {
+    padding: 1em;
+    display:inline-block;
+    width: 200px;
+    height: 860px;
+    font-size: 14px;
+    color: white;
+}
+
+#notes_title {
+    font-size: 19px;
+    color: white;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.notes_name {
+    font-size: 22px;
+    margin-left: 1em;
+    margin-top: -1em;
+}
+
+#notes_icon {
+    transform: scale(0.8);
+    float:left;
+}
+
+#notestime {
+    font-size: 16px;
+    margin-left: 5.5em;
+}
+
+#notes_list {
+    list-style: none;
+    margin-left: -2em;
+    font-size: 16px;
+}
+
+/**********************************/
+/****** map *******/
+
+#map_box {
+    margin-top: 3em;
+    margin-left: 3em;
+    display: inline-block;
+    width: 310px;
+    height: 430px;
+    border-radius: 1em;
+}
+
+#map_menu {
+    display: inline-block;
+    height: 423px;
+    width: 50px;
+    border-color: #0073BE;
+    border-style: solid;
+    border-radius: 1em;
+    background: url('img/bgminimenu.png') no-repeat;
+    float:left;
+}
+
+#map_content {
+    padding: 1em;
+    display:inline-block;
+    width: 200px;
+    height: 860px;
+    font-size: 14px;
+    color: white;
+}
+
+#map_title {
+    font-size: 19px;
+    color: white;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.map_name {
+    font-size: 22px;
+    margin-left: 1em;
+    margin-top: -1em;
+}
+
+#map_icon {
+    transform: scale(0.8);
+    float:left;
+}
+
+#maptime {
+    font-size: 16px;
+    margin-left: 5.5em;
+}
+
+#map_list {
+    list-style: none;
+    margin-left: -2em;
+    font-size: 16px;
+}
+
+#map_img {
+    display:block;
+    margin-top: 5em;
+    width: 110%; 
+    float: left;
+}
+
+/**********************************/
+/****** favoris *******/
+
+#fav_box {
+    margin-top: 3em;
+    margin-left: 3em;
+    display: inline-block;
+    width: 310px;
+    height: 430px;
+    border-radius: 1em;
+}
+
+#fav_menu {
+    display: inline-block;
+    height: 423px;
+    width: 50px;
+    border-color: #0073BE;
+    border-style: solid;
+    border-radius: 1em;
+    background: url('img/bgminimenu.png') no-repeat;
+    float:left;
+}
+
+#fav_content {
+    padding: 1em;
+    display:inline-block;
+    width: 200px;
+    height: 860px;
+    font-size: 14px;
+    color: white;
+}
+
+#fav_title {
+    font-size: 19px;
+    color: white;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.fav_name {
+    font-size: 22px;
+    margin-left: 1em;
+    margin-top: -1em;
+}
+
+#fav_icon {
+    transform: scale(1.1);
+    float:left;
+    margin-top: 0.5em;
+}
+
+#favtime {
+    font-size: 16px;
+    margin-left: 5.5em;
+}
+
+#fav_list {
+    list-style: none;
+    margin-left: -2em;
+    font-size: 16px;
+}
+
+#fav_img {
+    display:block;
+    margin-top: 5em;
+    width: 110%; 
+    float: left;
+}

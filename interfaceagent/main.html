@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deskr Interface</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body onload="startTime()">
+<script src="time.js"></script>
+<script src="TweenMax.min.js"></script>
+<script src="jquery-3.1.0.min.js"></script>
+<script src="main.js"></script>
+
+    <img src="img/top_screen.png" id="top_screen">
+    <div id="content">
+        <div class="blue_box" id="phone_box">
+            <div class="left_menu" id="phone_menu"></div>
+            <div id="phone_content">
+                <img src="img/phone.png" id="phone_icon"/> <h3 id="phone_title">APPEL EN COURS</h3>
+                        <img src="img/thomas.jpg" id="thomaspic" style="transform: scale(0.5); width:230px; height:230px; border-radius: 10em; border-color:white; border-width: 2px; border-style: solid;">
+                        <h4 class="phone_name">Thomas BASTIEN</h4>   <span id="phonetime"><span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+
+        <div class="blue_box" id="notes_box">
+            <div class="left_menu" id="notes_menu"></div>
+            <div id="notes_content">
+                <img src="img/notes.png" id="notes_icon"/> <h3 id="notes_title">NOTES</h3>
+                <p id="notes_text">
+                    <ul id="notes_list">
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="blue_box" id="map_box">
+            <div class="left_menu" id="map_menu"></div>
+            <div id="map_content">
+                <img src="img/mapicon.png" id="map_icon"/> <h3 id="map_title">CARTE</h3>
+                <img src="img/map.jpg" id="map_img"/>
+            </div>
+        </div>
+
+        <div class="blue_box" id="fav_box">
+            <div class="left_menu" id="fav_menu"></div>
+            <div id="fav_content">
+                <img src="img/fav.png" id="fav_icon"/> <h3 id="fav_title">FAVORIS</h3>
+                <img src="img/favori.jpg" id="fav_img"/>                
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <div id="bottom_screen"></div>
+
+</body>
+</html>
