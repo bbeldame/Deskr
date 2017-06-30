@@ -128,7 +128,6 @@ body {
 
 #open_content {
     background: url('img/bgmailopen.png');
-    background-size: 102%;
     width: 80%;
     height: 1000px;
     margin-top: 0;
@@ -137,10 +136,10 @@ body {
 }
 
 #mail {
-    width: 920px;
-    height: 500px;
-    margin-top: 10em;
-    margin-left: 17em;
+    width: 420px;
+    height: 600px;
+    margin-top: 3em;
+    margin-left: 6em;
     border-radius: 1em;
     padding: 2em 4em;
 }
@@ -152,13 +151,13 @@ body {
 }
 
 #time_received {
+    margin-bottom: 30px;
     font-size: 30px;
     display: inline-block;
-    margin-left: 430px;
 }
 
 #sub-title {
-    margin-bottom: 3em;
+    display: inherit;
 }
 
 #mail_body {
