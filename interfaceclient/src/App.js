@@ -10,14 +10,17 @@ export default class App extends Component {
     super(props);
   
     // Creating the socket-client instance will automatically connect to the server.
-    this.socket = SocketIOClient('http://localhost:3001');
+    this.socket = SocketIOClient('http://10.0.9.126:3001');
     this.socket.on('displayMap', this.displayMap);
     this.socket.on('deleteB', this.deleteB);
+    this.socket.on('augmentedReality', this.augmentedReality);
 
     this.GoogleMapConfig = {
       key: 'AIzaSyCiJKPshPbA-dOYAyHcM9iwcfSKelGULUE',
       language: 'fr',
     };
+
+    this.ARUrl = "https://dokunu.github.io/AR.js/three.js/examples/mobile-performance.html";
 
     this.logements = [
       {
@@ -43,10 +46,19 @@ export default class App extends Component {
     ];
 
     this.state = {
-      map: true,
+      map: false,
       choice: 0,
       b: true,
+      '3D': false,
     };
+  }
+
+  augmentedReality = () => {
+    this.setState({'3D' : true});
+
+    setTimeout(() => {
+      window.location.replace(this.ARUrl);
+    }, 4000);
   }
 
   deleteB = () => {
@@ -61,7 +73,6 @@ export default class App extends Component {
   }
 
   MappleGoog = () => {
-    console.log('mourir');
     return (
       <GoogleMapReact
         bootstrapURLKeys={this.GoogleMapConfig}
@@ -97,8 +108,23 @@ export default class App extends Component {
 
   render() {
 
+    if (this.state['3D'] === true) {
+      console.log('salut');
+      return (
+        <div style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#000',
+          width: '100%',
+          height: window.innerHeight
+        }}>
+          <img style={styles.img}src='back.png' alt="back" />
+        </div>
+      );
+    }
+
     if (this.state.map === false) {
-      console.log('ici')
       return (
         <div style={{
           flex: 1,
@@ -130,5 +156,13 @@ const styles = {
     backgroundColor: '#F5FCFF',
     width: '100%',
     height: window.innerHeight
+  },
+  img: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+    width: '100%',
+    height: 'auto'
   },
 };
