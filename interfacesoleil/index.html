@@ -244,13 +244,13 @@
 
     <script>
       var socket = io('http://10.0.9.126:3001');
-      //socket.on('displayHouse', function(){
+      socket.on('displayHouse', function(){
         console.log('salut');
         document.getElementById('hidden').style.display = "none";
         document.getElementById('floor').style.display = "block";
         init();
         animate();
-      //});
+      });
     </script>
 	</body>
 </html>
