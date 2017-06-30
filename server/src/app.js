@@ -10,6 +10,7 @@ server.listen(3001, () => console.log('listening on *:3001'));
 const sockets = [];
 
 function emitAll(action, message) {
+  console.log('emit de ', action);
   sockets.forEach(function(socket) {
     socket.emit(action, message)
   });
@@ -19,7 +20,6 @@ function emitAll(action, message) {
 websocket.on('connection', (socket) => {
   sockets.push(socket);
   socket.on('displayMap', (data) => {
-    console.log('SALUT');
     emitAll('displayMap', data);
   });
 
@@ -29,5 +29,21 @@ websocket.on('connection', (socket) => {
 
   socket.on('openImage', () => {
     emitAll('displayHouse');
+  });
+
+  socket.on('deleteB', () => {
+    emitAll('deleteB');
+  });
+
+  socket.on('openMail', () => {
+    emitAll('openMail');
+  });
+
+  socket.on('callThomas', () => {
+    emitAll('callThomas');
+  });
+
+  socket.on('augmentedReality', () => {
+    emitAll('augmentedReality');
   });
 });

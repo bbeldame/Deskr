@@ -69,8 +69,19 @@ class App extends Component {
                 this.socket.emit('displayMap');
                 this.setState({talking: false, listening: false});
               } else if (response.result.metadata.intentName.substring(3) === 'DisplayHouse') {
-                console.log('je suis ici');
                 this.socket.emit('openImage');
+                this.setState({talking: false, listening: false});
+              } else if (response.result.metadata.intentName.substring(3) === 'DeleteB') {
+                this.socket.emit('deleteB');
+                this.setState({talking: false, listening: false});
+              } else if (response.result.metadata.intentName.substring(3) === 'OpenMail') {
+                this.socket.emit('openMail');
+                this.setState({talking: false, listening: false});
+              } else if (response.result.metadata.intentName.substring(3) === 'CallThomas') {
+                this.socket.emit('callThomas');
+                this.setState({talking: false, listening: false});
+              } else if (response.result.metadata.intentName.substring(3) === '3D') {
+                this.socket.emit('augmentedReality');
                 this.setState({talking: false, listening: false});
               }
         } else {
