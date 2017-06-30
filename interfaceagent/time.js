@@ -16,7 +16,7 @@ var showText = function (target, msg, index, interval) {
 
     $(function () {
         setTimeout(function(){
-            showText("#notes_list","- Paris", 0, 100);
+            showText("#notes_list","- Nord Paris", 0, 100);
         }, 12100);
         setTimeout(function(){
             document.getElementById("notes_list").innerHTML += "<br/>"
@@ -36,11 +36,11 @@ var showText = function (target, msg, index, interval) {
         }, 22100);
         setTimeout(function(){
             document.getElementById("notes_list").innerHTML += "<br/>"
-            showText("#notes_list","- Avec ascenseur", 0, 100);
+            showText("#notes_list","- Avec parking", 0, 100);
         }, 24300);
         setTimeout(function(){
             document.getElementById("notes_list").innerHTML += "<br/>"
-            showText("#notes_list","- Parking", 0, 100);
+            showText("#notes_list","- RDV 16h chez le client", 0, 100);
         }, 26500);
     })
 }
